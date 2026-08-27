@@ -1,0 +1,147 @@
+{
+  "displayFieldName": "stname",
+  "fieldAliases": {
+    "vilname": "vilname",
+    "vilcode11": "vilcode11",
+    "vilcode_n": "vilcode_n",
+    "GP_CODE": "GP_CODE",
+    "GP_NAME": "GP_NAME",
+    "Block_Name": "Block_Name",
+    "dtname": "dtname",
+    "stname": "stname"
+  },
+  "fields": [
+    {
+      "name": "vilname",
+      "type": "esriFieldTypeString",
+      "alias": "vilname",
+      "length": 125
+    },
+    {
+      "name": "vilcode11",
+      "type": "esriFieldTypeString",
+      "alias": "vilcode11",
+      "length": 6
+    },
+    {
+      "name": "vilcode_n",
+      "type": "esriFieldTypeInteger",
+      "alias": "vilcode_n"
+    },
+    {
+      "name": "GP_CODE",
+      "type": "esriFieldTypeDouble",
+      "alias": "GP_CODE"
+    },
+    {
+      "name": "GP_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "GP_NAME",
+      "length": 50
+    },
+    {
+      "name": "Block_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Block_Name",
+      "length": 50
+    },
+    {
+      "name": "dtname",
+      "type": "esriFieldTypeString",
+      "alias": "dtname",
+      "length": 35
+    },
+    {
+      "name": "stname",
+      "type": "esriFieldTypeString",
+      "alias": "stname",
+      "length": 30
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "vilname": "Ankri Panre Bigha",
+        "vilcode11": "258260",
+        "vilcode_n": 258260,
+        "GP_CODE": 98342,
+        "GP_NAME": "ANKRI PANDEYBIGHA",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Dariyapur",
+        "vilcode11": "258263",
+        "vilcode_n": 258263,
+        "GP_CODE": 98342,
+        "GP_NAME": "ANKRI PANDEYBIGHA",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Dewara",
+        "vilcode11": "258264",
+        "vilcode_n": 258264,
+        "GP_CODE": 98342,
+        "GP_NAME": "ANKRI PANDEYBIGHA",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Dhanganwan",
+        "vilcode11": "258258",
+        "vilcode_n": 258258,
+        "GP_CODE": 98342,
+        "GP_NAME": "ANKRI PANDEYBIGHA",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Gobindpur Urf Qanungo Bigha",
+        "vilcode11": "258261",
+        "vilcode_n": 258261,
+        "GP_CODE": 98342,
+        "GP_NAME": "ANKRI PANDEYBIGHA",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Kopin",
+        "vilcode11": "258259",
+        "vilcode_n": 258259,
+        "GP_CODE": 98342,
+        "GP_NAME": "ANKRI PANDEYBIGHA",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Rampur",
+        "vilcode11": "258262",
+        "vilcode_n": 258262,
+        "GP_CODE": 98342,
+        "GP_NAME": "ANKRI PANDEYBIGHA",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    }
+  ]
+}

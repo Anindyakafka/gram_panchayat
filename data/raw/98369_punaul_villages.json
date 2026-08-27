@@ -1,0 +1,147 @@
+{
+  "displayFieldName": "stname",
+  "fieldAliases": {
+    "vilname": "vilname",
+    "vilcode11": "vilcode11",
+    "vilcode_n": "vilcode_n",
+    "GP_CODE": "GP_CODE",
+    "GP_NAME": "GP_NAME",
+    "Block_Name": "Block_Name",
+    "dtname": "dtname",
+    "stname": "stname"
+  },
+  "fields": [
+    {
+      "name": "vilname",
+      "type": "esriFieldTypeString",
+      "alias": "vilname",
+      "length": 125
+    },
+    {
+      "name": "vilcode11",
+      "type": "esriFieldTypeString",
+      "alias": "vilcode11",
+      "length": 6
+    },
+    {
+      "name": "vilcode_n",
+      "type": "esriFieldTypeInteger",
+      "alias": "vilcode_n"
+    },
+    {
+      "name": "GP_CODE",
+      "type": "esriFieldTypeDouble",
+      "alias": "GP_CODE"
+    },
+    {
+      "name": "GP_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "GP_NAME",
+      "length": 50
+    },
+    {
+      "name": "Block_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Block_Name",
+      "length": 50
+    },
+    {
+      "name": "dtname",
+      "type": "esriFieldTypeString",
+      "alias": "dtname",
+      "length": 35
+    },
+    {
+      "name": "stname",
+      "type": "esriFieldTypeString",
+      "alias": "stname",
+      "length": 30
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "vilname": "Baniya Bigha",
+        "vilcode11": "258185",
+        "vilcode_n": 258185,
+        "GP_CODE": 98369,
+        "GP_NAME": "PUNAUL",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Gangapur",
+        "vilcode11": "258184",
+        "vilcode_n": 258184,
+        "GP_CODE": 98369,
+        "GP_NAME": "PUNAUL",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Panre Chak",
+        "vilcode11": "258149",
+        "vilcode_n": 258149,
+        "GP_CODE": 98369,
+        "GP_NAME": "PUNAUL",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Patal Bigha",
+        "vilcode11": "258147",
+        "vilcode_n": 258147,
+        "GP_CODE": 98369,
+        "GP_NAME": "PUNAUL",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Punaul",
+        "vilcode11": "258181",
+        "vilcode_n": 258181,
+        "GP_CODE": 98369,
+        "GP_NAME": "PUNAUL",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Rampur Dhorhan",
+        "vilcode11": "258183",
+        "vilcode_n": 258183,
+        "GP_CODE": 98369,
+        "GP_NAME": "PUNAUL",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Saidpur",
+        "vilcode11": "258182",
+        "vilcode_n": 258182,
+        "GP_CODE": 98369,
+        "GP_NAME": "PUNAUL",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    }
+  ]
+}

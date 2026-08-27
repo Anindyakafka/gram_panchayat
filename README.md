@@ -5,14 +5,31 @@ This repository contains a reproducible pipeline for extracting Gram Panchayat
 [Gram Manchitra](https://grammanchitra.gov.in/gm4MVC) website and writing it to
 an analysis-ready Excel workbook.
 
-The current extraction covers two surveyed GPs:
+The current extraction covers 19 surveyed GPs:
 
 | State | District | Block | Gram Panchayat | Survey GP ID |
 |---|---|---|---|---:|
 | Madhya Pradesh | Barwani | Barwani | Bhandarda | 132840 |
+| Madhya Pradesh | Barwani | Pati | Budi | 132970 |
+| Madhya Pradesh | Barwani | Rajpur | Danod | 133021 |
 | Madhya Pradesh | Barwani | Barwani | Dhamnai | 132850 |
+| Madhya Pradesh | Barwani | Barwani | Kalyanpura | 132856 |
+| Madhya Pradesh | Barwani | Pati | Osada | 132988 |
+| Madhya Pradesh | Barwani | Pati | Pakhalya | 132989 |
+| Madhya Pradesh | Barwani | Pati | Semlet (F) | 132999 |
+| Madhya Pradesh | Barwani | Pati | Semli | 133000 |
+| Madhya Pradesh | Barwani | Barwani | Silawad | 132874 |
+| Madhya Pradesh | Barwani | Pati | Valan | 133006 |
+| Bihar | Nawada | Mescaur | Ankri Pandeybigha | 98342 |
+| Bihar | Nawada | Mescaur | Badosar | 98344 |
+| Bihar | Nawada | Mescaur | Barat | 98343 |
+| Bihar | Nawada | Narhat | Jamuara | 98364 |
+| Bihar | Nawada | Narhat | Konibar | 98366 |
+| Bihar | Nawada | Mescaur | Meskaur | 98347 |
+| Bihar | Nawada | Narhat | Pali Khurd | 98368 |
+| Bihar | Nawada | Narhat | Punaul | 98369 |
 
-The generated workbook is `output/gram_manchitra_bhandarda_dhamnai.xlsx`. It
+The generated workbook is `output/gram_manchitra_selected_gps.xlsx`. It
 contains a GP-level information sheet and a long-format ward-election sheet.
 Limited raw JSON snapshots are saved so every workbook value can be audited
 against the source responses.
@@ -45,14 +62,11 @@ gram_panchayat/
 |   `-- scrape_gram_manchitra.py
 |-- data/
 |   `-- raw/
-|       |-- 132840_bhandarda_basic.json
-|       |-- 132840_bhandarda_glance.json
-|       |-- 132840_bhandarda_villages.json
-|       |-- 132850_dhamnai_basic.json
-|       |-- 132850_dhamnai_glance.json
-|       `-- 132850_dhamnai_villages.json
+|       |-- <gp_code>_<gp_name>_basic.json
+|       |-- <gp_code>_<gp_name>_glance.json
+|       `-- <gp_code>_<gp_name>_villages.json
 `-- output/
-    `-- gram_manchitra_bhandarda_dhamnai.xlsx
+    `-- gram_manchitra_selected_gps.xlsx
 ```
 
 ### Important Files
@@ -132,10 +146,14 @@ This sheet contains one row per Gram Panchayat.
 
 Current village coverage:
 
-| GP | Villages returned by Gram Manchitra |
-|---|---|
-| Bhandarda | Bhandarda; Dhamodi; Jadakau |
-| Dhamnai | Dhamnai |
+| District | GPs | Maximum villages in one GP |
+|---|---:|---:|
+| Barwani | 11 | 8 |
+| Nawada | 8 | 12 |
+
+The workbook dynamically expands through `Village 12` for the current target
+set. Exact village lists are stored in the GP Information sheet and the
+corresponding `_villages.json` audit files.
 
 ### Ward Election Details
 
@@ -158,12 +176,29 @@ The current website exposes these election fields:
 | `Election type` | `electionType` | Text; blank when unavailable |
 | `Notes` | Generated | Lists fields displayed as unavailable for that record |
 
-The current workbook contains 36 Election Details records:
+The current workbook contains 336 Election Details records:
 
 | GP | Records |
 |---|---:|
 | Bhandarda | 21 |
+| Budi | 21 |
+| Danod | 21 |
 | Dhamnai | 15 |
+| Kalyanpura | 19 |
+| Osada | 21 |
+| Pakhalya | 19 |
+| Semlet (F) | 21 |
+| Semli | 21 |
+| Silawad | 21 |
+| Valan | 21 |
+| Ankri Pandeybigha | 17 |
+| Badosar | 13 |
+| Barat | 15 |
+| Jamuara | 14 |
+| Konibar | 15 |
+| Meskaur | 13 |
+| Pali Khurd | 14 |
+| Punaul | 14 |
 
 The script retains final records where Gram Manchitra returns a null
 representative name, `wardName = N/A`, and `wardType = S`. These are source
@@ -264,7 +299,7 @@ With the default configuration, this command:
 A successful run prints:
 
 ```text
-Wrote ...\output\gram_manchitra_bhandarda_dhamnai.xlsx with 2 GPs and 36 election rows
+Wrote ...\output\gram_manchitra_selected_gps.xlsx with 19 GPs and 336 election rows
 ```
 
 ### Command-Line Options
@@ -283,7 +318,7 @@ python scripts/scrape_gram_manchitra.py `
 |---|---|---|
 | `--source` | `gram_panchayat_reservation.xlsx` | Workbook containing `gp_code` |
 | `--targets` | `config/targets.csv` | Administrative hierarchies and GP names |
-| `--output` | `output/gram_manchitra_bhandarda_dhamnai.xlsx` | Generated workbook |
+| `--output` | `output/gram_manchitra_selected_gps.xlsx` | Generated workbook |
 | `--raw-dir` | `data/raw` | Generated audit JSON directory |
 
 The program replaces files with the same generated output names. It does not
@@ -294,14 +329,16 @@ modify the supplied survey workbook.
 Add one line per GP to `config/targets.csv`:
 
 ```csv
-state,district,block,gp_name
-Madhya Pradesh,Barwani,Barwani,Bhandarda
-Madhya Pradesh,Barwani,Barwani,Dhamnai
+state,district,block,gp_name,site_gp_name
+Madhya Pradesh,Barwani,Barwani,Bhandarda,
+Madhya Pradesh,Barwani,Pati,Semlet,Semlet (F)
 ```
 
-Keep the four column names unchanged. Use the administrative names expected on
-Gram Manchitra. Case differences are tolerated during validation, but correct
-State, District, Block, and GP selections are required.
+Keep the five column names unchanged. `gp_name` is the name used to match the
+survey workbook. `site_gp_name` is optional and should normally be blank. Use it
+only for a verified Gram Manchitra label difference, such as survey name
+`Semlet` versus site name `Semlet (F)`. Case differences are tolerated during
+validation, but correct State, District, Block, and GP selections are required.
 
 Confirm that each target appears in the source workbook's `gp_code` sheet. The
 current sheet contains only GP name and code, not District or Block. If the same

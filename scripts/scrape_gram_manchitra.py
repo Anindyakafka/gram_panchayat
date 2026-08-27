@@ -157,12 +157,15 @@ def run(source: Path, targets_path: Path, output: Path, raw_dir: Path) -> None:
     known_election_keys = {key for key, _ in ELECTION_FIELDS}
 
     for target in targets:
-        gp_name = target["gp_name"]
-        gp_code_matches = codes.get(norm(gp_name))
+        survey_gp_name = target["gp_name"]
+        site_gp_name = target.get("site_gp_name", "").strip() or survey_gp_name
+        gp_code_matches = codes.get(norm(survey_gp_name))
         if gp_code_matches is None:
-            raise KeyError(f"No gp_code match for {gp_name!r}")
+            raise KeyError(f"No gp_code match for {survey_gp_name!r}")
         if len(gp_code_matches) != 1:
-            raise ValueError(f"Ambiguous gp_code matches for {gp_name!r}: {gp_code_matches}")
+            raise ValueError(
+                f"Ambiguous gp_code matches for {survey_gp_name!r}: {gp_code_matches}"
+            )
         gp_code_text = next(iter(gp_code_matches))
         gp_code = int(float(gp_code_text))
         basic = post_profile(gp_code, 0)
@@ -174,18 +177,29 @@ def run(source: Path, targets_path: Path, output: Path, raw_dir: Path) -> None:
             "State": target["state"],
             "District": target["district"],
             "Block": target["block"],
-            "GP name": gp_name,
+            "GP name": site_gp_name,
         }
         for field, expected in checks.items():
             if norm(hierarchy[field]) != norm(expected):
-                raise ValueError(f"Hierarchy mismatch for {gp_name}: {field}={hierarchy[field]!r}")
-        if int(glance["localBodyCode"]) != gp_code or norm(glance["localBodyName"]) != norm(gp_name):
-            raise ValueError(f"Profile identity mismatch for {gp_name}")
+                raise ValueError(
+                    f"Hierarchy mismatch for {survey_gp_name}: "
+                    f"{field}={hierarchy[field]!r}"
+                )
+        if (
+            int(glance["localBodyCode"]) != gp_code
+            or norm(glance["localBodyName"]) != norm(site_gp_name)
+        ):
+            raise ValueError(f"Profile identity mismatch for {survey_gp_name}")
 
-        raw_basic = {key: value for key, value in basic.items() if key in BASIC_AUDIT_FIELDS}
-        save_json(raw_dir / f"{gp_code}_{norm(gp_name).replace(' ', '_')}_basic.json", raw_basic)
-        save_json(raw_dir / f"{gp_code}_{norm(gp_name).replace(' ', '_')}_glance.json", glance)
-        save_json(raw_dir / f"{gp_code}_{norm(gp_name).replace(' ', '_')}_villages.json", villages_payload)
+        output_checks = {**checks, "GP name": glance["localBodyName"]}
+
+        raw_basic = {
+            key: value for key, value in basic.items() if key in BASIC_AUDIT_FIELDS
+        }
+        file_label = norm(survey_gp_name).replace(" ", "_")
+        save_json(raw_dir / f"{gp_code}_{file_label}_basic.json", raw_basic)
+        save_json(raw_dir / f"{gp_code}_{file_label}_glance.json", glance)
+        save_json(raw_dir / f"{gp_code}_{file_label}_villages.json", villages_payload)
 
         villages = [item["attributes"].get("vilname") for item in villages_payload["features"]]
         notes = []
@@ -198,7 +212,7 @@ def run(source: Path, targets_path: Path, output: Path, raw_dir: Path) -> None:
         else:
             notes.append("Secretary gender blank: not available")
         gp_records.append({
-            **checks,
+            **output_checks,
             "Our GP ID": gp_code,
             "villages": villages,
             "Sarpanch name": blank_if_none(basic.get("nameOfSarpanch")),
@@ -209,7 +223,7 @@ def run(source: Path, targets_path: Path, output: Path, raw_dir: Path) -> None:
         })
 
         for election in glance.get("electionDetails") or []:
-            record = {**checks, "Our GP ID": gp_code}
+            record = {**output_checks, "Our GP ID": gp_code}
             missing = []
             for key, label in ELECTION_FIELDS:
                 value = election.get(key)
@@ -270,7 +284,11 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--source", type=Path, default=root / "gram_panchayat_reservation.xlsx")
     parser.add_argument("--targets", type=Path, default=root / "config" / "targets.csv")
-    parser.add_argument("--output", type=Path, default=root / "output" / "gram_manchitra_bhandarda_dhamnai.xlsx")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=root / "output" / "gram_manchitra_selected_gps.xlsx",
+    )
     parser.add_argument("--raw-dir", type=Path, default=root / "data" / "raw")
     args = parser.parse_args()
     run(args.source, args.targets, args.output, args.raw_dir)

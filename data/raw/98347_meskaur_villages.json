@@ -1,0 +1,123 @@
+{
+  "displayFieldName": "stname",
+  "fieldAliases": {
+    "vilname": "vilname",
+    "vilcode11": "vilcode11",
+    "vilcode_n": "vilcode_n",
+    "GP_CODE": "GP_CODE",
+    "GP_NAME": "GP_NAME",
+    "Block_Name": "Block_Name",
+    "dtname": "dtname",
+    "stname": "stname"
+  },
+  "fields": [
+    {
+      "name": "vilname",
+      "type": "esriFieldTypeString",
+      "alias": "vilname",
+      "length": 125
+    },
+    {
+      "name": "vilcode11",
+      "type": "esriFieldTypeString",
+      "alias": "vilcode11",
+      "length": 6
+    },
+    {
+      "name": "vilcode_n",
+      "type": "esriFieldTypeInteger",
+      "alias": "vilcode_n"
+    },
+    {
+      "name": "GP_CODE",
+      "type": "esriFieldTypeDouble",
+      "alias": "GP_CODE"
+    },
+    {
+      "name": "GP_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "GP_NAME",
+      "length": 50
+    },
+    {
+      "name": "Block_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Block_Name",
+      "length": 50
+    },
+    {
+      "name": "dtname",
+      "type": "esriFieldTypeString",
+      "alias": "dtname",
+      "length": 35
+    },
+    {
+      "name": "stname",
+      "type": "esriFieldTypeString",
+      "alias": "stname",
+      "length": 30
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "vilname": "Lodipur Chak",
+        "vilcode11": "258245",
+        "vilcode_n": 258245,
+        "GP_CODE": 98347,
+        "GP_NAME": "MESKAUR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Meksaur",
+        "vilcode11": "258239",
+        "vilcode_n": 258239,
+        "GP_CODE": 98347,
+        "GP_NAME": "MESKAUR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Noni",
+        "vilcode11": "258244",
+        "vilcode_n": 258244,
+        "GP_CODE": 98347,
+        "GP_NAME": "MESKAUR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Pathra",
+        "vilcode11": "258243",
+        "vilcode_n": 258243,
+        "GP_CODE": 98347,
+        "GP_NAME": "MESKAUR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Ranka Jalalpur",
+        "vilcode11": "258242",
+        "vilcode_n": 258242,
+        "GP_CODE": 98347,
+        "GP_NAME": "MESKAUR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    }
+  ]
+}

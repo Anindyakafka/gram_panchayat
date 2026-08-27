@@ -7,7 +7,8 @@ small reproducible extraction pipeline:
 - `config/targets.csv`: requested State/District/Block/GP selections.
 - `scripts/scrape_gram_manchitra.py`: validated extraction and workbook builder.
 - `data/raw/`: audit JSON returned by the public endpoints (generated).
-- `output/`: final analysis-ready workbook (generated).
+- `output/gram_manchitra_selected_gps.xlsx`: final analysis-ready workbook
+  for the configured targets (generated).
 
 Install and run from PowerShell:
 

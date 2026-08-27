@@ -1,0 +1,75 @@
+{
+  "displayFieldName": "stname",
+  "fieldAliases": {
+    "vilname": "vilname",
+    "vilcode11": "vilcode11",
+    "vilcode_n": "vilcode_n",
+    "GP_CODE": "GP_CODE",
+    "GP_NAME": "GP_NAME",
+    "Block_Name": "Block_Name",
+    "dtname": "dtname",
+    "stname": "stname"
+  },
+  "fields": [
+    {
+      "name": "vilname",
+      "type": "esriFieldTypeString",
+      "alias": "vilname",
+      "length": 125
+    },
+    {
+      "name": "vilcode11",
+      "type": "esriFieldTypeString",
+      "alias": "vilcode11",
+      "length": 6
+    },
+    {
+      "name": "vilcode_n",
+      "type": "esriFieldTypeInteger",
+      "alias": "vilcode_n"
+    },
+    {
+      "name": "GP_CODE",
+      "type": "esriFieldTypeDouble",
+      "alias": "GP_CODE"
+    },
+    {
+      "name": "GP_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "GP_NAME",
+      "length": 50
+    },
+    {
+      "name": "Block_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Block_Name",
+      "length": 50
+    },
+    {
+      "name": "dtname",
+      "type": "esriFieldTypeString",
+      "alias": "dtname",
+      "length": 35
+    },
+    {
+      "name": "stname",
+      "type": "esriFieldTypeString",
+      "alias": "stname",
+      "length": 30
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "vilname": "Silawad",
+        "vilcode11": "478056",
+        "vilcode_n": 478056,
+        "GP_CODE": 132874,
+        "GP_NAME": "SILAWAD",
+        "Block_Name": "Barwani",
+        "dtname": "Barwani",
+        "stname": "MADHYA PRADESH"
+      }
+    }
+  ]
+}

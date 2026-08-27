@@ -1,3 +1,20 @@
-state,district,block,gp_name
-Madhya Pradesh,Barwani,Barwani,Bhandarda
-Madhya Pradesh,Barwani,Barwani,Dhamnai
+state,district,block,gp_name,site_gp_name
+Madhya Pradesh,Barwani,Barwani,Bhandarda,
+Madhya Pradesh,Barwani,Pati,Budi,
+Madhya Pradesh,Barwani,Rajpur,Danod,
+Madhya Pradesh,Barwani,Barwani,Dhamnai,
+Madhya Pradesh,Barwani,Barwani,Kalyanpura,
+Madhya Pradesh,Barwani,Pati,Osada,
+Madhya Pradesh,Barwani,Pati,Pakhalya,
+Madhya Pradesh,Barwani,Pati,Semlet,Semlet (F)
+Madhya Pradesh,Barwani,Pati,Semli,
+Madhya Pradesh,Barwani,Barwani,Silawad,
+Madhya Pradesh,Barwani,Pati,Valan,
+Bihar,Nawada,Mescaur,Ankri Pandeybigha,
+Bihar,Nawada,Mescaur,Badosar,
+Bihar,Nawada,Mescaur,Barat,
+Bihar,Nawada,Narhat,Jamuara,
+Bihar,Nawada,Narhat,Konibar,
+Bihar,Nawada,Mescaur,Meskaur,
+Bihar,Nawada,Narhat,Pali Khurd,
+Bihar,Nawada,Narhat,Punaul,

@@ -1,0 +1,171 @@
+{
+  "displayFieldName": "stname",
+  "fieldAliases": {
+    "vilname": "vilname",
+    "vilcode11": "vilcode11",
+    "vilcode_n": "vilcode_n",
+    "GP_CODE": "GP_CODE",
+    "GP_NAME": "GP_NAME",
+    "Block_Name": "Block_Name",
+    "dtname": "dtname",
+    "stname": "stname"
+  },
+  "fields": [
+    {
+      "name": "vilname",
+      "type": "esriFieldTypeString",
+      "alias": "vilname",
+      "length": 125
+    },
+    {
+      "name": "vilcode11",
+      "type": "esriFieldTypeString",
+      "alias": "vilcode11",
+      "length": 6
+    },
+    {
+      "name": "vilcode_n",
+      "type": "esriFieldTypeInteger",
+      "alias": "vilcode_n"
+    },
+    {
+      "name": "GP_CODE",
+      "type": "esriFieldTypeDouble",
+      "alias": "GP_CODE"
+    },
+    {
+      "name": "GP_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "GP_NAME",
+      "length": 50
+    },
+    {
+      "name": "Block_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Block_Name",
+      "length": 50
+    },
+    {
+      "name": "dtname",
+      "type": "esriFieldTypeString",
+      "alias": "dtname",
+      "length": 35
+    },
+    {
+      "name": "stname",
+      "type": "esriFieldTypeString",
+      "alias": "stname",
+      "length": 30
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "vilname": "Adganwan",
+        "vilcode11": "258215",
+        "vilcode_n": 258215,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Arandi",
+        "vilcode11": "258218",
+        "vilcode_n": 258218,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Bandhi",
+        "vilcode11": "258222",
+        "vilcode_n": 258222,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Barosar",
+        "vilcode11": "258220",
+        "vilcode_n": 258220,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Belwan",
+        "vilcode11": "258219",
+        "vilcode_n": 258219,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Chorabara",
+        "vilcode11": "258221",
+        "vilcode_n": 258221,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Sonpura",
+        "vilcode11": "258216",
+        "vilcode_n": 258216,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Tali",
+        "vilcode11": "258217",
+        "vilcode_n": 258217,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Woraina",
+        "vilcode11": "258223",
+        "vilcode_n": 258223,
+        "GP_CODE": 98344,
+        "GP_NAME": "BADOSAR",
+        "Block_Name": "Mescaur",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    }
+  ]
+}

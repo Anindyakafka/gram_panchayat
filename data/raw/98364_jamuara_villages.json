@@ -1,0 +1,207 @@
+{
+  "displayFieldName": "stname",
+  "fieldAliases": {
+    "vilname": "vilname",
+    "vilcode11": "vilcode11",
+    "vilcode_n": "vilcode_n",
+    "GP_CODE": "GP_CODE",
+    "GP_NAME": "GP_NAME",
+    "Block_Name": "Block_Name",
+    "dtname": "dtname",
+    "stname": "stname"
+  },
+  "fields": [
+    {
+      "name": "vilname",
+      "type": "esriFieldTypeString",
+      "alias": "vilname",
+      "length": 125
+    },
+    {
+      "name": "vilcode11",
+      "type": "esriFieldTypeString",
+      "alias": "vilcode11",
+      "length": 6
+    },
+    {
+      "name": "vilcode_n",
+      "type": "esriFieldTypeInteger",
+      "alias": "vilcode_n"
+    },
+    {
+      "name": "GP_CODE",
+      "type": "esriFieldTypeDouble",
+      "alias": "GP_CODE"
+    },
+    {
+      "name": "GP_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "GP_NAME",
+      "length": 50
+    },
+    {
+      "name": "Block_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Block_Name",
+      "length": 50
+    },
+    {
+      "name": "dtname",
+      "type": "esriFieldTypeString",
+      "alias": "dtname",
+      "length": 35
+    },
+    {
+      "name": "stname",
+      "type": "esriFieldTypeString",
+      "alias": "stname",
+      "length": 30
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "vilname": "Akhra",
+        "vilcode11": "258170",
+        "vilcode_n": 258170,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Bajo Chak",
+        "vilcode11": "258153",
+        "vilcode_n": 258153,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Barauli",
+        "vilcode11": "258176",
+        "vilcode_n": 258176,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Barauli Chak",
+        "vilcode11": "258175",
+        "vilcode_n": 258175,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Bhim Bigha",
+        "vilcode11": "258151",
+        "vilcode_n": 258151,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Gajra",
+        "vilcode11": "258169",
+        "vilcode_n": 258169,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Jamuara",
+        "vilcode11": "258172",
+        "vilcode_n": 258172,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Narayanpur",
+        "vilcode11": "258173",
+        "vilcode_n": 258173,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Qazipur",
+        "vilcode11": "258174",
+        "vilcode_n": 258174,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Shah Ghazipur",
+        "vilcode11": "258206",
+        "vilcode_n": 258206,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Shah Ghazipur",
+        "vilcode11": "258171",
+        "vilcode_n": 258171,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Sindudri",
+        "vilcode11": "258152",
+        "vilcode_n": 258152,
+        "GP_CODE": 98364,
+        "GP_NAME": "JAMUARA",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    }
+  ]
+}

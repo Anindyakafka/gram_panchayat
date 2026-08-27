@@ -1,0 +1,135 @@
+{
+  "displayFieldName": "stname",
+  "fieldAliases": {
+    "vilname": "vilname",
+    "vilcode11": "vilcode11",
+    "vilcode_n": "vilcode_n",
+    "GP_CODE": "GP_CODE",
+    "GP_NAME": "GP_NAME",
+    "Block_Name": "Block_Name",
+    "dtname": "dtname",
+    "stname": "stname"
+  },
+  "fields": [
+    {
+      "name": "vilname",
+      "type": "esriFieldTypeString",
+      "alias": "vilname",
+      "length": 125
+    },
+    {
+      "name": "vilcode11",
+      "type": "esriFieldTypeString",
+      "alias": "vilcode11",
+      "length": 6
+    },
+    {
+      "name": "vilcode_n",
+      "type": "esriFieldTypeInteger",
+      "alias": "vilcode_n"
+    },
+    {
+      "name": "GP_CODE",
+      "type": "esriFieldTypeDouble",
+      "alias": "GP_CODE"
+    },
+    {
+      "name": "GP_NAME",
+      "type": "esriFieldTypeString",
+      "alias": "GP_NAME",
+      "length": 50
+    },
+    {
+      "name": "Block_Name",
+      "type": "esriFieldTypeString",
+      "alias": "Block_Name",
+      "length": 50
+    },
+    {
+      "name": "dtname",
+      "type": "esriFieldTypeString",
+      "alias": "dtname",
+      "length": 35
+    },
+    {
+      "name": "stname",
+      "type": "esriFieldTypeString",
+      "alias": "stname",
+      "length": 30
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "vilname": "Chainpura",
+        "vilcode11": "258168",
+        "vilcode_n": 258168,
+        "GP_CODE": 98368,
+        "GP_NAME": "PALI KHURD",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Daulatpur",
+        "vilcode11": "258166",
+        "vilcode_n": 258166,
+        "GP_CODE": 98368,
+        "GP_NAME": "PALI KHURD",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Dewara",
+        "vilcode11": "258167",
+        "vilcode_n": 258167,
+        "GP_CODE": 98368,
+        "GP_NAME": "PALI KHURD",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Guru Chak",
+        "vilcode11": "258156",
+        "vilcode_n": 258156,
+        "GP_CODE": 98368,
+        "GP_NAME": "PALI KHURD",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Pali Kalan",
+        "vilcode11": "258154",
+        "vilcode_n": 258154,
+        "GP_CODE": 98368,
+        "GP_NAME": "PALI KHURD",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    },
+    {
+      "attributes": {
+        "vilname": "Pali Khurd",
+        "vilcode11": "258155",
+        "vilcode_n": 258155,
+        "GP_CODE": 98368,
+        "GP_NAME": "PALI KHURD",
+        "Block_Name": "Narhat",
+        "dtname": "Nawada",
+        "stname": "BIHAR"
+      }
+    }
+  ]
+}
